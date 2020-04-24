@@ -51,6 +51,7 @@ def download(url, pathname):
             f.write(data)
             # update the progress bar manually
             progress.update(len(data))
+    f.close()
 
 
 def load(url, path):
